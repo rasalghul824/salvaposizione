@@ -1,0 +1,50 @@
+/* stylegeo.css */
+
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Forza l'altezza al 100% */
+    width: 100%; /* Forza la larghezza al 100% */
+    overflow: hidden; /* Nascondi le barre di scorrimento se necessario */
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001; /* Assicura che l'intestazione sia sopra la mappa e il pulsante */
+    color: #333;
+}
+
+#map {
+    width: 100vw; /* 100% della larghezza della viewport */
+    height: 100vh; /* 100% dell'altezza della viewport */
+    border: none; /* Rimuovi il bordo */
+}
+
+button {
+    position: absolute; /* Posiziona il pulsante in basso */
+    bottom: 20px;      /* Distanza dal bordo inferiore */
+    left: 50%;         /* Centra orizzontalmente */
+    transform: translateX(-50%); /* Centra orizzontalmente */
+    padding: 10px 20px;
+    background-color: rgba(76, 175, 80, 0.8); /* Verde con trasparenza */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000; /* Assicura che il pulsante sia sopra la mappa */
+    font-size: 16px; /* Aumenta la dimensione del testo */
+}
+
+button:hover {
+    background-color: rgba(62, 138, 65, 0.8); /* Verde più scuro con trasparenza */
+}
